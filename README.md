@@ -13,8 +13,8 @@ A full-stack application for managing electric vehicle charging stations with us
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/charging-stations.git
-cd charging-stations/backend
+git clone https://github.com/saurav981/Evoltsoft-Technologies-assignment.git
+cd backend
 
 # Install dependencies
 npm install
@@ -32,7 +32,7 @@ npm start
 ### 2. Frontend Setup
 
 ```
-cd ../frontend
+cd frontend
 
 # Install dependencies
 npm install
@@ -53,17 +53,22 @@ npm run dev
 | PUT    | /api/chargers/:id  | Update station     | Yes           |
 | DELETE | /api/chargers/:id  | Delete station     | Yes           |
 
-## 🧪 Testing API
+## 🧪 Testing API with Postman
 
 **Postman Collection:**
-Download Postman Collection (attach JSON file in repo)
+
+1. Please download the "Evoltsoft postman.json" file from Postman Collection folder.
+2. Import the collection file in Postman.
+3. Create a new environment variable called "host" and set it's current value to "https://evoltsoft-api.onrender.com", our backend API url. Since, we're using {{host}} prefix for each of our endpoints.
+4. Now you can make test all the endpoints with ease.
+5. Some requests have prefilled values as well for convenience.
 
 Example requests:
 
 **Register User**
 
 ```
-POST /api/auth/register
+POST {{host}}/api/auth/register
 Body: {
   "email": "user@example.com",
   "password": "securepassword"
@@ -73,7 +78,7 @@ Body: {
 **Create Charging Station**
 
 ```
-POST /api/stations
+POST /api/chargers
 Body: {
   "name": "Downtown Charger",
   "location": { "lat": 40.7128, "lng": -74.0060 },
@@ -125,4 +130,4 @@ _Interactive Map View_
 - 🗺️ Interactive map view (OpenStreetMap) with station markers
 - 🔍 Click markers to view station details
 
-Looking forward to your feedback. Thank you!
+Hope you like it. Thank you!

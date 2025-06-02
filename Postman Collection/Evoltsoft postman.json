@@ -1,0 +1,156 @@
+{
+  "info": {
+    "_postman_id": "d953784a-8a70-4305-bf4a-565a71ec0aa5",
+    "name": "Evolsolft fullstack - Saurav assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38403167"
+  },
+  "item": [
+    {
+      "name": "Chargers",
+      "item": [
+        {
+          "name": "Create Charger",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Station Alpha\",\r\n  \"location\": {\r\n    \"lat\": 40.7128,\r\n    \"lng\": -74.0060\r\n  },\r\n  \"status\": \"Active\",\r\n  \"powerOutput\": 120,\r\n  \"connectorType\": \"CCS\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/chargers",
+              "host": ["{{host}}"],
+              "path": ["api", "chargers"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List/Get All Chargers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/api/chargers",
+              "host": ["{{host}}"],
+              "path": ["api", "chargers"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Charger",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Tezpur Station\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/chargers/683b070685c687ef8a86ec38",
+              "host": ["{{host}}"],
+              "path": ["api", "chargers", "683b070685c687ef8a86ec38"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Charger",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/api/chargers/683b070685c687ef8a86ec38",
+              "host": ["{{host}}"],
+              "path": ["api", "chargers", "683b070685c687ef8a86ec38"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"hey@abc.com\",\r\n    \"password\": \"12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/auth/register",
+              "host": ["{{host}}"],
+              "path": ["api", "auth", "register"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"hey@abc.com\",\r\n    \"password\": \"12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/auth/login",
+              "host": ["{{host}}"],
+              "path": ["api", "auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "text"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/auth/logout",
+              "host": ["{{host}}"],
+              "path": ["api", "auth", "logout"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
