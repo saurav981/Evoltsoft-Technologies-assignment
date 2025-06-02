@@ -2,10 +2,14 @@
 
 A full-stack application for managing electric vehicle charging stations with user authentication, CRUD operations, and interactive map view for Evoltsoft Technologies assignment.
 
-## 🚀 Deployment
+
+
+## 🚀 Deployed Links
 
 - **Frontend URL:** https://evoltsoft-ui.onrender.com
 - **Backend API URL:** https://evoltsoft-api.onrender.com
+
+
 
 ## 🏗️ Setup Instructions
 
@@ -41,17 +45,7 @@ npm install
 npm run dev
 ```
 
-## 📚 API Endpoints
 
-| Method | Endpoint           | Description        | Auth Required |
-| ------ | ------------------ | ------------------ | ------------- |
-| POST   | /api/auth/register | User registration  | No            |
-| POST   | /api/auth/login    | User login         | No            |
-| POST   | /api/auth/logout   | User logout        | Yes           |
-| GET    | /api/chargers      | Get all stations   | Yes           |
-| POST   | /api/chargers      | Create new station | Yes           |
-| PUT    | /api/chargers/:id  | Update station     | Yes           |
-| DELETE | /api/chargers/:id  | Delete station     | Yes           |
 
 ## 🧪 Testing API with Postman
 
@@ -59,7 +53,7 @@ npm run dev
 
 1. Please download the "Evoltsoft postman.json" file from Postman Collection folder.
 2. Import the collection file in Postman.
-3. Create a new environment variable called "host" and set it's current value to "https://evoltsoft-api.onrender.com", our backend API url. Since, we're using {{host}} prefix for each of our endpoints.
+3. Create a new environment variable called "host" and set it's Current value to "https://evoltsoft-api.onrender.com", our backend API url. Since, we're using {{host}} prefix for each of our endpoints.
 4. Now you can make test all the endpoints with ease.
 5. Some requests have prefilled values as well for convenience.
 
@@ -78,7 +72,7 @@ Body: {
 **Create Charging Station**
 
 ```
-POST /api/chargers
+POST {{host}}/api/chargers
 Body: {
   "name": "Downtown Charger",
   "location": { "lat": 40.7128, "lng": -74.0060 },
@@ -87,6 +81,22 @@ Body: {
   "connectorType": "CCS"
 }
 ```
+
+## 
+
+## 📚 API Endpoints
+
+| Method | Endpoint           | Description        | Auth Required |
+| ------ | ------------------ | ------------------ | ------------- |
+| POST   | /api/auth/register | User registration  | No            |
+| POST   | /api/auth/login    | User login         | No            |
+| POST   | /api/auth/logout   | User logout        | Yes           |
+| GET    | /api/chargers      | Get all stations   | Yes           |
+| POST   | /api/chargers      | Create new station | Yes           |
+| PUT    | /api/chargers/:id  | Update station     | Yes           |
+| DELETE | /api/chargers/:id  | Delete station     | Yes           |
+
+
 
 ## 📷 Screenshots in Dark theme
 
@@ -99,6 +109,8 @@ _Stations List with Filters_
 ![Map View](https://i.postimg.cc/vmDgzxMm/image.png)
 _Interactive Map View_
 
+
+
 ## 🛠️ Tech Stack
 
 - Vue.js 3
@@ -110,6 +122,8 @@ _Interactive Map View_
 - JWT (for auth)
 - Pinia (vue.js state management)
 - Vue Router
+
+
 
 ## 🌟 Features
 
