@@ -4,8 +4,8 @@ A full-stack application for managing electric vehicle charging stations with us
 
 ## 🚀 Deployment
 
-**Frontend URL:** [https://charging-stations-ui.onrender.com](https://charging-stations-ui.onrender.com)  
-**Backend API URL:** [https://charging-stations-api.onrender.com](https://charging-stations-api.onrender.com)
+**Frontend URL:** https://evoltsoft-ui.onrender.com
+**Backend API URL:** https://evoltsoft-api.onrender.com
 
 ## 🏗️ Setup Instructions
 
@@ -22,8 +22,8 @@ npm install
 # Create .env file
 echo "MONGODB_URI=<your-mongodb-uri>
 JWT_SECRET=<your-secret-key>
-PORT=3000
-FRONTEND_URL=<your-frontend-url>" > .env
+PORT=5000
+FRONTEND_URL=https://evoltsoft-ui.onrender.com" > .env
 
 # Start server
 npm start
@@ -123,3 +123,5 @@ _Interactive Map View_
 - ✏️ Add/Edit/Delete functionality
 - 🗺️ Interactive map view (OpenStreetMap) with station markers
 - 🔍 Click markers to view station details
+
+Looking forward to your feedback. Thank you!
