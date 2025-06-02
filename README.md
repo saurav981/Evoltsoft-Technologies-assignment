@@ -4,8 +4,8 @@ A full-stack application for managing electric vehicle charging stations with us
 
 ## 🚀 Deployment
 
-**Frontend URL:** https://evoltsoft-ui.onrender.com
-**Backend API URL:** https://evoltsoft-api.onrender.com
+- **Frontend URL:** https://evoltsoft-ui.onrender.com
+- **Backend API URL:** https://evoltsoft-api.onrender.com
 
 ## 🏗️ Setup Instructions
 
