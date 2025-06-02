@@ -47,10 +47,11 @@ npm run dev
 | ------ | ------------------ | ------------------ | ------------- |
 | POST   | /api/auth/register | User registration  | No            |
 | POST   | /api/auth/login    | User login         | No            |
-| GET    | /api/stations      | Get all stations   | Yes           |
-| POST   | /api/stations      | Create new station | Yes           |
-| PUT    | /api/stations/:id  | Update station     | Yes           |
-| DELETE | /api/stations/:id  | Delete station     | Yes           |
+| POST   | /api/auth/logout   | User logout        | Yes           |
+| GET    | /api/chargers      | Get all stations   | Yes           |
+| POST   | /api/chargers      | Create new station | Yes           |
+| PUT    | /api/chargers/:id  | Update station     | Yes           |
+| DELETE | /api/chargers/:id  | Delete station     | Yes           |
 
 ## 🧪 Testing API
 
