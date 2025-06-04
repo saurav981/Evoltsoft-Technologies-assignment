@@ -26,14 +26,8 @@ app.use("/api", limiter);
 app.use("/api/auth", authRoutes);
 app.use("/api/chargers", chargerRoutes);
 
-app.get("/health", async (req, res) => {
-  try {
-    await mongoose.connection.db.command({ ping: 1 });
-    res.sendStatus(200);
-  } catch (err) {
-    res.status(503).json({ message: "Database not ready" });
-  }
-});
+// ping this every 10 minutes using UptimeRobot to keep server alive, and avoid cold start
+app.get("/health", (req, res) => res.sendStatus(200));
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
